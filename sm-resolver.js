@@ -7,7 +7,7 @@ const NotFound = ({ sliceName }) => {
 	return process.env.NODE_ENV !== 'production' ? <p>component "{sliceName}" not found.</p> : <div />
 }
 
-export default ({ sliceName, i }) => {
+export default function Register({ sliceName }) {
 	return __allSlices[sliceName] ? __allSlices[sliceName] : () => <NotFound sliceName={sliceName} />
 }
 

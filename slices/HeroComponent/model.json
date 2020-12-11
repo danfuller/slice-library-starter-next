@@ -1,0 +1,57 @@
+{
+  "id": "hero_component",
+  "type": "SharedSlice",
+  "name": "HeroComponent",
+  "description": "HeroComponent",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeroComponent",
+      "primary": {
+        "Image": {
+          "type": "Image",
+          "config": {
+            "id": "Image",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "Subtitle": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "ImagePosition": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "default_value": "Full",
+            "options": [
+              "Full",
+              "Left",
+              "Right"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
